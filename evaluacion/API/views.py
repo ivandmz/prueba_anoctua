@@ -4,14 +4,14 @@ from sqlalchemy import create_engine
 
 
 # Ruta del archivo
-archivo_csv = '../data/data.csv'
+archivo_csv = './data/data.csv'
 
 # Create your views here.
 def script_ETL():
     # Cargar el archivo CSV en un DataFrame
-    df = pd.read_csv(archivo_csv, header=0)
+    df = pd.read_csv(archivo_csv, header=0,delimiter=',')
     #  Nombrar columnas
-    df.columns = ['fecha','tipo_de_cambio.']
+    df.columns = ['fecha','tipo_de_cambio']
 
     # Conexion a DB usando sqlalchemy
     engine = create_engine("sqlite:///prueba_anoctua.sqlite")
