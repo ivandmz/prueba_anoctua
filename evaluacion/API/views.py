@@ -1,7 +1,6 @@
 from django.shortcuts import render
 import pandas as pd
 from sqlalchemy import create_engine
-from settings import DATABASES
 
 
 # Ruta del archivo
@@ -14,5 +13,16 @@ def script_ETL():
     #  Nombrar columnas
     df.columns = ['fecha','tipo_de_cambio.']
 
-    #conexion a DB usando sqlalchemy
-    engine = create_engine(DATABASES)
+    # Conexion a DB usando sqlalchemy
+    engine = create_engine("sqlite:///prueba_anoctua.sqlite")
+
+    # Cargar datos en la tabla "cotizaciones"
+    df.to_sql('cotizaciones', engine, if_exists='replace', index=False)
+    
+    # Mensaje de confirmacion
+    print("Datos cargados exitosamente en la tabla.")
+
+
+
+if __name__ == "__main__":
+    script_ETL()
