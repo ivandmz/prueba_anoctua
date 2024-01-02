@@ -7,8 +7,10 @@
 
 -------------------------------------------------
 REFERENCIAS
+https://www.django-rest-framework.org/
 https://medium.com/@nicolasurrego/c%C3%B3mo-cargar-un-archivo-csv-en-python-considerando-sus-caracter%C3%ADsticas-5cb0ca74e9d
 https://www.analyticslane.com/2019/05/06/como-cambiar-el-nombre-de-las-columnas-en-pandas/
+https://j2logo.com/python/sqlalchemy-tutorial-de-python-sqlalchemy-guia-de-inicio/
 
 
 -------------------------------------------------
