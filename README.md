@@ -9,17 +9,26 @@ PROCEDIMIENTO
 7- Se incluyó routers en urls.py
 8- Se realizan migraciones (makemigrations & migrate)
 9- Testeo del endpoint generado. Por ejemplo: http://localhost:8000/cotizaciones/promediar_periodo/?fecha_inicio=2018-07-04&fecha_fin=2018-07-17          con resultado positivo.
+10- Para el tercer ítem se generó el nuevo model, su viewset y su serializer.
+11- Dentro del método create se toman los parámetros del post.
+12- Con 'fecha' obtenemos la cotización para el día o la anterior.
+13- De existir una cotización se emplea la data para crear, mediante su serializer, un nuevo objeto 'Compra'.
+14- Se presentan las distintas posibilidades en el view mediante estructuras 'if'.
+15- Mediante Postman se envía una solicitud POST al endpoint generado por el viewset (ver img adjunta en carpeta 'extras').
 
 
 
 -------------------------------------------------
 REFERENCIAS
+
 https://www.djangoproject.com/
 https://docs.djangoproject.com/es/5.0/topics/db/aggregation/
 https://www.django-rest-framework.org/
 https://medium.com/@nicolasurrego/c%C3%B3mo-cargar-un-archivo-csv-en-python-considerando-sus-caracter%C3%ADsticas-5cb0ca74e9d
 https://www.analyticslane.com/2019/05/06/como-cambiar-el-nombre-de-las-columnas-en-pandas/
 https://j2logo.com/python/sqlalchemy-tutorial-de-python-sqlalchemy-guia-de-inicio/
+https://codigofacilito.com/articulos/mejora-consultas-django
+https://docs.kanaries.net/es/topics/Pandas/pandas-read-csv
 
 
 -------------------------------------------------
