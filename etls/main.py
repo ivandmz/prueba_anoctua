@@ -18,7 +18,7 @@ def script_ETL():
     engine = create_engine("sqlite:///prueba_anoctua.sqlite")
 
     # Cargar datos en la tabla "cotizaciones"
-    df.to_sql('cotizaciones', engine, if_exists='replace', index=False)
+    df.to_sql('cotizaciones', engine, if_exists='append', index=False)
     
     # Mensaje de confirmacion
     print("Datos cargados exitosamente en la tabla.")
