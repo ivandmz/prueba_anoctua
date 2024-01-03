@@ -1,0 +1,1 @@
+SELECT strftime('%Y-%m',fecha) as "mes", max(tipo_de_cambio) as 'max_tipo_de_cambio' from "cotizaciones" group by(mes)
