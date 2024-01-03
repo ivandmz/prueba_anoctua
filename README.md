@@ -1,12 +1,21 @@
-1- Clono repo, creo repo local y nuevo repo. Cambio remote por el del nuevo repo, actualizo .gitignore para basico de python.
-2- Creo ambiente virtual, activo e installo paquetes (django, DRF, pandas, sqlalchemy, etc)
-3- Creo listado de requirements (ver detalle debajo)
-4- 
+PROCEDIMIENTO
+
+1- Se clona el repo, se crea repo local y nuevo repo. Se cambia remote por el del nuevo repo, actualizando .gitignore para basico de python.
+2- Se crea ambiente virtual, se activa e instalan paquetes (django, DRF, pandas, sqlalchemy, etc).
+3- Creación de listado de requirements (ver detalle debajo).
+4- Para el primer punto se crea el script en etls/main.py utilizando pandas para cargar el archivo y generar la tabla y sqlalchemy para vincularlo a la DB.
+5- Al correr el archivo se genera en la base de datos la tabla "cotizaciones" requerida.
+6- Para el segundo item se generó una app llamada 'api' con el model 'Cotizacion', su serializer y su viewset
+7- Se incluyó routers en urls.py
+8- Se realizan migraciones (makemigrations & migrate)
+9- Testeo del endpoint generado. Por ejemplo: http://localhost:8000/cotizaciones/promediar_periodo/?fecha_inicio=2018-07-04&fecha_fin=2018-07-17          con resultado positivo.
 
 
 
 -------------------------------------------------
 REFERENCIAS
+https://www.djangoproject.com/
+https://docs.djangoproject.com/es/5.0/topics/db/aggregation/
 https://www.django-rest-framework.org/
 https://medium.com/@nicolasurrego/c%C3%B3mo-cargar-un-archivo-csv-en-python-considerando-sus-caracter%C3%ADsticas-5cb0ca74e9d
 https://www.analyticslane.com/2019/05/06/como-cambiar-el-nombre-de-las-columnas-en-pandas/
