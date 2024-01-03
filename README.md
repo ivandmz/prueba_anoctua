@@ -17,6 +17,8 @@ PROCEDIMIENTO
 15- Mediante Postman se envía una solicitud POST al endpoint generado por el viewset (ver img adjunta en carpeta 'extras').
 16- La base de datos elegida no acepta funciones de ventana como la mencionada RANK() por lo que se procede a unir subconsultas
 17- Se emplea 'strftime()' para separar las subconsultas por mes y año y la función 'MAX()' y 'GROUP BY()' para determinar los valores pedidos.
+18- Finalmente la consulta sql queda (script subido en extras):
+    SELECT strftime('%Y-%m',fecha) as "mes", max(tipo_de_cambio) as 'max_tipo_de_cambio' from "cotizaciones" group by(mes)
 
 
 
