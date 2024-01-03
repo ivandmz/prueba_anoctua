@@ -30,7 +30,7 @@ https://j2logo.com/python/sqlalchemy-tutorial-de-python-sqlalchemy-guia-de-inici
 https://codigofacilito.com/articulos/mejora-consultas-django
 https://docs.kanaries.net/es/topics/Pandas/pandas-read-csv
 https://stackoverflow.com/questions/38610723/how-to-insert-a-pandas-dataframe-to-an-already-existing-table-in-a-database
-
+https://learn.microsoft.com/es-es/sql/t-sql/functions/rank-transact-sql?view=sql-server-ver16
 
 -------------------------------------------------
 *REQUIREMENTS.TXT*
