@@ -14,7 +14,7 @@ PROCEDIMIENTO
 12- Con 'fecha' obtenemos la cotización para el día o la anterior.
 13- De existir una cotización se emplea la data para crear, mediante su serializer, un nuevo objeto 'Compra'.
 14- Se presentan las distintas posibilidades en el view mediante estructuras 'if'.
-15- Mediante Postman se envía una solicitud POST al endpoint generado por el viewset.
+15- Mediante Postman se envía una solicitud POST al endpoint generado por el viewset (ver img adjunta en carpeta 'extras').
 
 
 
