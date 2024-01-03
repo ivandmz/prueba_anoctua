@@ -29,6 +29,7 @@ https://www.analyticslane.com/2019/05/06/como-cambiar-el-nombre-de-las-columnas-
 https://j2logo.com/python/sqlalchemy-tutorial-de-python-sqlalchemy-guia-de-inicio/
 https://codigofacilito.com/articulos/mejora-consultas-django
 https://docs.kanaries.net/es/topics/Pandas/pandas-read-csv
+https://stackoverflow.com/questions/38610723/how-to-insert-a-pandas-dataframe-to-an-already-existing-table-in-a-database
 
 
 -------------------------------------------------
